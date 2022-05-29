@@ -1,0 +1,39 @@
+// ==============================
+// Header
+// ==============================
+
+.header {
+  @include clearfix;  
+
+  @import '_header/logo';
+  @import '_header/menu';
+}
+
+
+@include max-screen() {
+  .header {
+    padding: 50px 0 0;
+    text-align: center;
+  }
+}
+ 
+
+ 
+.main {
+      max-width: 1080px;
+      box-shadow: 0 5px 10px 4px rgba($head-fg,.13);
+      margin: 22px auto 0 auto;
+} 
+
+@media screen and (min-width: 504px) and (max-width: 1080px) {
+  .main {
+      max-width: 680px;
+      box-shadow: none; 
+  }
+}
+@media screen   and (max-width: 504px) {
+  .main {   
+      max-width: 100%;
+      box-shadow: none;
+  }
+}

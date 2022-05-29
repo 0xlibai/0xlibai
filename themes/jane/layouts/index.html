@@ -1,0 +1,26 @@
+{{ define "content" }}
+<section id="posts" class="posts">
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}
+  {{ $pages = where .Site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ end }}
+  {{ $paginator := .Paginate $pages }}
+  <strong>最新文章</strong>
+  <ul>
+    {{ range $paginator.Pages }}
+    <li> <time datetime="{{ .Date.Format " 2006-01-02" }}" class="post-time">
+        {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+      </time>
+      <a href="{{ .RelPermalink }}" class="post-link">
+        {{ .Title }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+
+</section>
+
+<!-- pagination -->
+{{ partial "pagination.html" . }}
+
+{{ end }}

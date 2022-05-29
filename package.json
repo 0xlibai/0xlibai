@@ -1,0 +1,34 @@
+{
+  "name": "0xlibai.com",
+  "version": "1.0.0",
+  "description": "0xlibai blog",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysqi/ysqi.github.io.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "ysqi",
+  "bugs": {
+    "url": "https://github.com/ysqi/ysqi.github.io/issues"
+  },
+  "homepage": "https://github.com/ysqi/ysqi.github.io#readme",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-exec": "^1.0.1",
+    "grunt-gh-pages": "4.0.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  }
+}

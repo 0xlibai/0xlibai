@@ -1,0 +1,6 @@
+/public
+/dev
+/.grunt 
+/node_modules
+/resources
+.DS_Store
