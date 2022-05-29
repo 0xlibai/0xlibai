@@ -1,0 +1,197 @@
+baseurl = "https://0xlibai.com"
+languageCode = "zh"
+# language support # en / zh-cn / other...
+defaultContentLanguage = "zh-cn"
+title = ">构建被动收入"
+
+disqusShortname = "0xlibai"
+
+# 使用自定义的 chromastyles 样式，
+# 启用时需  hugo gen chromastyles --style=monokai > syntax.css 生成指定代码高亮主题
+pygmentsUseClasses = false
+
+# 为 true 时，markdown 中代码进行 html 转换
+# PygmentsCodeFences = true
+
+# 代码高亮主题，可用主题，见： https://help.farbox.com/pygments.html
+# 注意：如果 pygmentsUseClasses = true 则不生效
+# pygmentsstyle = "default"
+
+# Set to true to try to do syntax highlighting on code fenced blocks in markdown without a language tag.
+# pygmentsCodefencesGuessSyntax = true
+# If you for some reason don’t want to use the built-in Chroma highlighter, you can set pygmentsUseClassic=true
+# pygmentsUseClassic = true
+
+uglyURLs = true
+metaDataFormat = "YAML"
+# disqusShortname = "yushuangqi"
+publishdir = "public"
+
+theme = "jane"
+hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
+paginate = 3                                              # 首页每页显示的文章数
+rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
+
+# ignoreFiles = ["book/*"]
+Copyright= "0xlibai"
+[author]
+  name= "0xlibai"
+[params]
+  uglyURLs = true  # 扩展hugo var 尚未公开的变量，方便在模板中使用 
+  beian = ""
+  description= "0xlibai的时间、财务、投资、技术管理，构建被动收入运转模式"
+  enableDiscuss = true
+
+  debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
+
+  since = "2022"            # Site creation time          # 站点建立时间
+  homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
+  rssFullContent = false     # if false, Rss feed instead of the summary
+
+  # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
+  #logoTitle = ""        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["时间管理","财务管理", "投资管理","终生学习","区块链DAPP开发","被动收入"]
+
+  # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
+  archive-paginate = 25
+
+  # paginate style, default use numbered pagination links
+  # if true, use original "Previous" and "Next" links.
+  # paginateOriginalStyle = true
+
+  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+  dateFormatToUse = "2006/01"
+
+  # show word count and read time ?                       # 是否显示字数统计与阅读时间
+  moreMeta = true
+
+  # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
+  # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
+  toc = true                                                                            # 是否开启目录
+  autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
+  fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
+  bootcdn = false           # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
+  mathjax = true           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
+  contentCopyright = '不得用于盈利用途'
+  showAuthorInfo = true
+  author= "0xlibai"
+  tencent_analytics = ""    # Tencent Analytics
+  baidu_push = true        # baidu push                  # 百度
+  baidu_analytics = ""      # Baidu Analytics
+  baidu_verification = ""   # Baidu Verification
+  google_verification = ""  # Google_Verification         # 谷歌
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
+  customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+
+
+  [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
+    enable = true
+    jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
+    slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
+    fancyboxJs = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
+    fancyboxCss = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
+    gitmentJS = '<script src="https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js" crossorigin="anonymous"></script>'
+    gitmentCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">'
+    photoswipeCSS='<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css" integrity="sha512-yxWNfGm+7EK+hqP2CMJ13hsUNCQfHmOuCuLmOq2+uv/AVQtFAjlAJO8bHzpYGQnBghULqnPuY8NEr7f5exR3Qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />'
+    photoswipeSkin='<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css" integrity="sha512-Rck8F2HFBjAQpszOB9Qy+NVLeIy4vUOMB7xrp46edxB3KXs2RxXRguHfrJqNK+vJ+CkfvcGqAKMJTyWYBiBsGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />'
+    photoswipe='<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.js" integrity="sha512-+nk2mC526z7CLAqNldbLDkqsEtWPKMCg2oRati2QrBCf/wWLmJdOyreVGHUmwxm8AZ9lpI85rD4YMUXDWaU+Qw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>'
+    photoswipeUI='<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js" integrity="sha512-SxO0cwfxj/QhgX1SgpmUr0U2l5304ezGVhc0AO2YwOQ/C8O67ynyTorMKGjVv1fJnPQgjdxRz6x70MY9r0sKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>'
+
+ 
+
+  #[params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+  #  owner = "ysqi"              # Your GitHub ID
+  #  repo = "ysqi.github.io"               # The repo to store comments
+  #  clientId = "639ba986c281b9fcf382"           # Your client ID
+  #  clientSecret = "b5862135f283dd308a7f226c06980cf50b8e82f1"       # Your client secret
+
+
+  [params.reward]                                         # 文章打赏
+    enable = false
+    wechat = ""           # 微信二维码
+    alipay = ""           # 支付宝二维码
+
+  [params.social]                                         # 社交链接
+    a-email = "mailto:0xbill321@gmail.com"
+    # b-stack-overflow = ""
+    c-twitter = "https://twitter.com/0xlibai"
+    # d-facebook = ""
+    # e-linkedin = ""
+    # f-google = ""
+    g-github = "http://github.com/0xlibai"
+    # h-weibo = ""
+    # i-zhihu = ""
+    # j-douban = ""
+    # k-pocket = ""
+    # l-tumblr = ""
+    # m-instagram = ""
+    # n-gitlab = ""
+    # o-goodreads = ""
+ 
+   
+
+  [params.plugins]
+    # enable Open Graph protocol,see https://developers.facebook.com/docs/sharing/opengraph
+    openGraph = true 
+
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    # topic = "topics"
+    series = "series"
+
+[permalinks]
+	#post = "/blog/:year/:slug"
+	# top = "/:slug.html"
+  resource = "/resource/:title"
+
+
+[sitemap]                 # essential                     # 必需
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+ 
+
+[[menu.main]]
+  name = "关于"
+  weight = 10
+  identifier = "about"
+  url = "/about.html"
+
+[[menu.main]]
+  name = "学习"
+  weight = 11
+  identifier = "self"
+  url = "/self.html"
+
+
+[[menu.main]]
+  name = "技术"
+  weight = 12
+  identifier = "dev"
+  url = "/dev.html"
+
+
+[[menu.main]]
+  name = "投资"
+  weight = 12
+  identifier = "money"
+  url = "/money.html"
+
+[[menu.main]]
+  name = "长期目标"
+  weight = 13
+  identifier = "goals"
+  url = "/goals.html"
+
+
+[[menu.main]]
+  name = "标签"
+  weight = 30
+  identifier = "tags"
+  url = "/tags.html"
+
