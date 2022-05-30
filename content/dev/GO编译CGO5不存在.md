@@ -2,8 +2,9 @@
 title: "GO编译提示CGO5不存在"
 date: 2022-05-30T22:45:04+08:00
 lastmod: 2022-05-30T22:45:04+08:00
-type: post
+# type: post
 draft: false
+slug: "go-cgo-5-not-found"
 keywords: ["gcc-5", "go build failed"]
 description: "编译GO项目出错C compiler gcc-5 not found"
 contentCopyright: false
