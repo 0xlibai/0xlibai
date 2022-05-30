@@ -6,12 +6,12 @@
   text-align: center;
 
   .error-emoji {
-    color: #363636;
+    color: $theme-color;
     font-size: 3rem;
   }
 
   .error-text {
-    color: #797979;
+    color: $global-content-color;
     font-size: 1.25rem;
   }
 
