@@ -41,10 +41,11 @@ $dark-gray: #8a8a8a !default;
 
 
 // ========== Global ========== //
-$head-fg: #16982B;
-$global-link-color: #16982B;
+$head-fg: $theme-color;
+$global-link-color: $theme-color;
 // Text color of the body.
-$global-font-color: #fff !default; //#503214
+$global-font-color: $theme-color !default;
+$global-content-color: #dbdbdb;
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 18px !default; 
 // Global width of '<body>'.
@@ -63,7 +64,7 @@ $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !def
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 // Background color of the site.
-$global-background: #0a0a0a; //#e9dec8
+$global-background: #0a0a0a;
 
 // rgba(0, 0, 0, 0.3),#242329
 

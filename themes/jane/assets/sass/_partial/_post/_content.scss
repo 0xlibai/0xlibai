@@ -4,6 +4,8 @@
 
 .post-content {
   word-wrap: break-word; 
+
+  color: $global-content-color;
   @for $i from 1 through 6 {
     h#{$i} {
       font-weight: 600;
