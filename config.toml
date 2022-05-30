@@ -137,6 +137,19 @@ Copyright= "0xlibai"
     # enable Open Graph protocol,see https://developers.facebook.com/docs/sharing/opengraph
     openGraph = true 
 
+[markup]
+  [markup.highlight] 
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    noHl = true
+    tabWidth = 4
 
 [taxonomies]
     tag = "tags"
