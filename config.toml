@@ -111,7 +111,7 @@ enable = false
 wechat = "" # 微信二维码
 
 [params.social] # 社交链接
-a-email = "mailto:0xbill321@gmail.com"
+a-email = "mailto:0xlibai@gmail.com"
 # b-stack-overflow = ""
 c-twitter = "https://twitter.com/0xlibai"
 # d-facebook = ""
