@@ -100,10 +100,10 @@ photoswipeUI = '<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4
 slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
 
 [params.gitment] # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-clientId = "b5d934f017909351cf2e" # Your client ID
-clientSecret = "78df74ec75515a980221b0156d07cf62afba6a9a" # Your client secret
-owner = "0xlibai" # Your GitHub ID
-repo = "0xlibai" # The repo to store comments
+# clientId = "b5d934f017909351cf2e" # Your client ID
+# clientSecret = "78df74ec75515a980221b0156d07cf62afba6a9a" # Your client secret
+# owner = "0xlibai" # Your GitHub ID
+# repo = "0xlibai" # The repo to store comments
 
 [params.reward] # 文章打赏
 alipay = "" # 支付宝二维码
