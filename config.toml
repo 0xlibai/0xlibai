@@ -30,16 +30,16 @@ publishdir = "public"
 hasCJKLanguage = true # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 3 # 首页每页显示的文章数
 rssLimit = 20 # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
-theme = "jane" 
+theme = "jane"
 
 # ignoreFiles = ["book/*"]
 Copyright = "0xlibai"
 [author]
 name = "0xlibai"
 [params]
-beian = "" 
-description = "0xlibai的时间、财务、投资、技术管理，构建被动收入运转模式" 
-enableDiscuss = true 
+beian = ""
+description = "0xlibai的时间、财务、投资、技术管理，构建被动收入运转模式"
+enableDiscuss = true
 uglyURLs = true # 扩展hugo var 尚未公开的变量，方便在模板中使用
 
 debug = false # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
@@ -67,17 +67,17 @@ moreMeta = true
 
 # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
 # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
-author = "0xlibai" 
+author = "0xlibai"
 autoCollapseToc = false # Auto expand and collapse toc                              # 目录自动展开/折叠
 baidu_analytics = "" # Baidu Analytics
 baidu_push = true # baidu push                  # 百度
 baidu_verification = "" # Baidu Verification
 bootcdn = false # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
-contentCopyright = '不得用于盈利用途' 
+contentCopyright = '不得用于盈利用途'
 fancybox = true # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
 google_verification = "" # Google_Verification         # 谷歌
 mathjax = true # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
-showAuthorInfo = true 
+showAuthorInfo = true
 tencent_analytics = "" # Tencent Analytics
 toc = true # 是否开启目录
 
@@ -107,7 +107,7 @@ slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideo
 
 [params.reward] # 文章打赏
 alipay = "" # 支付宝二维码
-enable = false 
+enable = false
 wechat = "" # 微信二维码
 
 [params.social] # 社交链接
